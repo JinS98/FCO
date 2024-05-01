@@ -39,7 +39,6 @@ export default function Home() {
             <S.Input
           placeholder="구단주명"
           onChange={onChangeNickName}
-          // onKeyDown={onChangeNickName}
           onKeyDown={(e) => e.code === 'Enter' ? onClickBtn(): ""}
           />
           </S.InputWrap>

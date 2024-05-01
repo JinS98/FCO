@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import DetailPresenter from "./detailPage.presenter.js";
 
 export default function DetailContainer() {
     const [road, setRoad] = useState(false)
@@ -62,13 +63,10 @@ export default function DetailContainer() {
     
     return (
         <>
-            <div>{level}</div>
-            <div>{nickName}</div>
-            {matchArr.length !== 0 ? matchArr.map((el) => (
-                <div key={el}>{el}</div>
-            )) : 
-            <div>경기 결과가 없습니다.</div>
-            }
+           <DetailPresenter 
+            level = {level}
+            nickName = {nickName}
+           />
         </>
     )
 

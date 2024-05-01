@@ -3,18 +3,18 @@ import styled from "@emotion/styled";
 export const Background = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
     background-color: #07553B;
 `;
 export const Logo = styled.div`
-width: 350px;
-height: 200px;
-background-image: url('/FCO_logo.png');
-background-size: 100% 100%;
-margin-bottom: 50px;
+    margin-top: 150px;
+    width: 350px;
+    height: 200px;
+    background-image: url('/FCO_logo.png');
+    background-size: 100% 100%;
+    margin-bottom: 50px;
 `
 export const Wrapper = styled.div`
     width: 50%;
@@ -39,7 +39,6 @@ export const Text = styled.div`
 `
 export const Input =styled.input`
     width: 90%;
-    /* height: 80%; */
     border: none;
     font-size: 20px;
     :focus {
@@ -56,5 +55,4 @@ export const Btn = styled.button`
     border: none;
     background-position-y:-7px ;
     cursor: pointer;
-    /* border: none; */
 `

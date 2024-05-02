@@ -33,5 +33,6 @@ export const userInfo = styled.div`
     flex-direction: column;
     width: 70%;
     height: 50%;
-`  
+` 
+export const nickName = styled.div`` 
 

@@ -101,7 +101,7 @@ export default function DetailContainer() {
     },[road])
     
 
-    if(matchArr.length !== 0) {      (async function () {
+    if(matchArr.length !== 0) {(async function () {
             const response = matchArr
               .map((el) => fetch(`https://open.api.nexon.com/fconline/v1/match-detail?matchid=${el}`,{
                 headers:{

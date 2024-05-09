@@ -109,9 +109,8 @@ export default function DetailContainer() {
                         }
               })
               .then((res) => res.json()));
-              setMatchDetailArr(await Promise.all(response));
+              console.log(response)
           })();
-          console.log(matchDetailArr)
 
     }
         
